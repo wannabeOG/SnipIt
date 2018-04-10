@@ -1,19 +1,21 @@
-// Author : Saihimal Allu 
+#include <opencv2/core/core.hpp>
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <iostream>
+#include <vector>
 
-// Usage : The following code is an implementation of the ELA algorithm 
-// in a JPEG image. This implementation was done as a part of an assig-
-// ment for RedCarpet. 
-
-
-// Importing the libraries 
-# include <iostream>
-# include <opencv2/highgui/highgui.hpp>
-# include "opencv2/imgproc.hpp"
-using namespace std;
 using namespace cv;
+using namespace std;
 
- int main() {
+Mat ela_implementation(Mat image, int compression_factor) {
 
- 	cout << "Hello world" << endl;
- 	return 0;
- }
+ // Takes in the image, compresses the image and returns the result
+    std::vector <int> params;
+    params.push_back(CV_IMWRITE_JPEG_QUALITY);
+    params.push_back(compression_factor);
+    Mat comp_image = cv::imwrite("compressed.jpeg",image,params);
+
+
+
+}
+ 
