@@ -56,3 +56,9 @@ Test Image             |  Photoshopped image
 </p>
 
 The strong presence of rainbowing near the ballon regions only suggests that an Adobe product, like Photoshop or Lightroom, was used to save the image. It does not identify intentional modifications. 
+
+## References ##
+1. Tutorial on ELA  (https://fotoforensics.com/tutorial-ela.php)
+2. Creating the cython wrapper (https://studywolf.wordpress.com/2012/09/14/cython-journey-part-1/)
+3. Countless people on Stack Overflow
+
