@@ -90,7 +90,7 @@ void ela_implementation(int compression_factor, int multiplier) {
  // namedWindow( "Display window", WINDOW_AUTOSIZE );// Create a window for display.
  // imshow( "Display window", diff_img );  
  // return diff_image;
- imwrite("ela_implemented_img.jpg",diff_img);
+ imwrite("ela_implemented_img.jpg",diff_image);
        
 }
  
@@ -100,7 +100,7 @@ void main_function(int argc, char* filename) {
     int multiplier=30;
     Mat image;
     /*running ela on original image taken by mobile*/
-    image = imread(filename,CV_LOAD_IMAGE_COLOR);
+    image = imread("image.jpg",CV_LOAD_IMAGE_COLOR);
     //cv::Size s = img.size();
     //int rows = s.height;
     //nt cols = s.width;
@@ -109,7 +109,7 @@ void main_function(int argc, char* filename) {
     
     Mat elaResult_img;
     
-    if (argc!=2 || image.empty()) {
+    if (image.empty()) {
         cout << "could not load image !" << endl;
     } 
 
