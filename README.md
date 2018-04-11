@@ -36,5 +36,23 @@ project.
 You should get the following images
 * **compressed.jpeg**: This is the image which was compressed from the original image.
 * **diff.jpeg**: This image illustates the difference in the compressed and the original image.
-* **ela_implemented_jpg**: Scales up the diff.jpeg image to better illustrate the differences in the two images.
+* **ela_implemented_jpeg**: Scales up the diff.jpeg image to better illustrate the differences in the two images.
 
+## Results ##
+
+### Original Photos ###
+
+Test Image             |  Photoshopped image
+:-------------------------:|:-------------------------:
+![](https://github.com/wannabeOG/image/blob/master/Photoshop_Test/test.jpeg)  |  ![](https://github.com/wannabeOG/image/blob/master/Photoshop_Test/photoshopped_test.jpeg)
+<br>
+<br>
+<br>
+
+### After Applying ELA on Photoshopped image ###
+<p align="center">
+  <img src="https://github.com/wannabeOG/image/blob/master/Photoshop_Test/ela_implemented_img.jpg" alt="Size Limit example"
+       width="600" height="600">
+</p>
+
+The strong presence of rainbowing near the ballon regions only suggests that an Adobe product, like Photoshop or Lightroom, was used to save the image. It does not identify intentional modifications. 
