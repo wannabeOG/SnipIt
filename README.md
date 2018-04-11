@@ -49,11 +49,10 @@ Test Image             |  Photoshopped image
 <br>
 <br>
 
-### After Applying ELA on Photoshopped image ###
-<p align="center">
-  <img src="https://github.com/wannabeOG/image/blob/master/Photoshop_Test/ela_implemented_img.jpg" alt="Size Limit example"
-       width="600" height="600">
-</p>
+### After Applying ELA on Test image and Photoshopped image ###
+Test Image after ELA            |  Photoshopped image after ELA
+:-------------------------:|:-------------------------:
+![](https://github.com/wannabeOG/image/blob/master/Photoshop_Test/ela_implemeneted_test.jpg)  |  ![](https://github.com/wannabeOG/image/blob/master/Photoshop_Test/ela_implemented_img.jpg)
 
 The strong presence of rainbowing near the ballon regions only suggests that an Adobe product, like Photoshop or Lightroom, was used to save the image. It does not identify intentional modifications. 
 
