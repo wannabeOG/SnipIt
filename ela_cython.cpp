@@ -15,12 +15,13 @@
 using namespace cv;
 using namespace std;
 
-Mat ela_implementation(Mat image, int compression_factor, int multiplier) {
+void ela_implementation(int compression_factor, int multiplier) {
 
  // Takes in the image, compresses the image and returns the result
  // cout << image.channels() << endl;
- //   Mat image;
- //   image = image = imread("image.jpg",CV_LOAD_IMAGE_COLOR);
+    Mat image;
+    image = imread("image.jpg",CV_LOAD_IMAGE_COLOR);
+
     std::vector <int> params;
     params.push_back(CV_IMWRITE_JPEG_QUALITY);
     params.push_back(compression_factor);
@@ -88,17 +89,18 @@ Mat ela_implementation(Mat image, int compression_factor, int multiplier) {
  // diff_img = imread("diff.jpg" ,1);
  // namedWindow( "Display window", WINDOW_AUTOSIZE );// Create a window for display.
  // imshow( "Display window", diff_img );  
-    return diff_image;
+ // return diff_image;
+ imwrite("ela_implemented_img.jpg",diff_img);
        
 }
  
-int main(int argc, char** argv) {
+void main_function(int argc, char* filename) {
     
     int compression_value=75;
     int multiplier=30;
     Mat image;
     /*running ela on original image taken by mobile*/
-    image = imread(argv[1],CV_LOAD_IMAGE_COLOR);
+    image = imread(filename,CV_LOAD_IMAGE_COLOR);
     //cv::Size s = img.size();
     //int rows = s.height;
     //nt cols = s.width;
@@ -112,10 +114,10 @@ int main(int argc, char** argv) {
     } 
 
      else{
-        elaResult_img = ela_implementation(image,compression_value,multiplier);
+        ela_implementation(compression_value,multiplier);
     }    
     
-    imwrite("ela_implemented_img.jpg",elaResult_img);
+    
 
     
 }

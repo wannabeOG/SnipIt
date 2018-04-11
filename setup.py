@@ -7,10 +7,12 @@ setup(
     author = 'Saihimal Allu',
     ext_modules=[
         Extension("ela",
-            sources=["elawrapper.pyx", "ela_cython.cpp"], 
+            sources=["wrapper.pyx", "ela_cython.cpp"], 
             include_dirs=[".","source" , "/usr/local/include/opencv", "/usr/local/include"],
             language="c++",
             library_dirs=['/usr/local/lib', 'source', '/usr/lib', '/lib'],
-            libraries=['opencv_core', 'opencv_highgui'])
+            libraries=['opencv_core', 'opencv_highgui', 'opencv_imgproc'])
     ],
 cmdclass = {'build_ext': build_ext},
+
+)
