@@ -57,6 +57,25 @@ Test Image             |  Photoshopped image
 
 The strong presence of rainbowing near the ballon regions only suggests that an Adobe product, like Photoshop or Lightroom, was used to save the image. It does not identify intentional modifications. 
 
+## Terminal Screenshots ##
+
+### Building the wrapper ###
+
+<p align="left">
+  <img src="https://github.com/wannabeOG/image/blob/master/Initial_Test/Screenshot%20from%202018-04-11%2015-40-15.png" alt="Size Limit example"
+       width="1300" height="500">
+</p>
+<br>
+ The bottom right and top right terminal show the contents of the folder before and after applying ELA on the image
+ 
+ ### Running ELA through the python interface ###
+ <p align="left">
+  <img src="https://github.com/wannabeOG/image/blob/master/Initial_Test/Screenshot%20from%202018-04-11%2016-49-12.png" alt="Size Limit example"
+       width="1300" height="500">
+</p>
+<br>
+ 
+
 ## References ##
 1. Tutorial on ELA  (https://fotoforensics.com/tutorial-ela.php)
 2. Creating the cython wrapper (https://studywolf.wordpress.com/2012/09/14/cython-journey-part-1/)
