@@ -979,7 +979,7 @@ static PyObject *__pyx_codeobj__3;
  * 
  * 
  * def elaimplementationpy():             # <<<<<<<<<<<<<<
- * 	ela_implementation(0,0)
+ * 	ela_implementation('a',0,0)
  * 
  */
 
@@ -1005,17 +1005,17 @@ static PyObject *__pyx_pf_3ela_elaimplementationpy(CYTHON_UNUSED PyObject *__pyx
   /* "wrapper.pyx":8
  * 
  * def elaimplementationpy():
- * 	ela_implementation(0,0)             # <<<<<<<<<<<<<<
+ * 	ela_implementation('a',0,0)             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  ela_implementation(0, 0);
+  ela_implementation(((char *)"a"), 0, 0);
 
   /* "wrapper.pyx":7
  * 
  * 
  * def elaimplementationpy():             # <<<<<<<<<<<<<<
- * 	ela_implementation(0,0)
+ * 	ela_implementation('a',0,0)
  * 
  */
 
@@ -1141,7 +1141,7 @@ static int __Pyx_InitCachedConstants(void) {
  * 
  * 
  * def elaimplementationpy():             # <<<<<<<<<<<<<<
- * 	ela_implementation(0,0)
+ * 	ela_implementation('a',0,0)
  * 
  */
   __pyx_codeobj_ = (PyObject*)__Pyx_PyCode_New(0, 0, 0, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_wrapper_pyx, __pyx_n_s_elaimplementationpy, 7, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj_)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -1412,7 +1412,7 @@ if (!__Pyx_RefNanny) {
  * 
  * 
  * def elaimplementationpy():             # <<<<<<<<<<<<<<
- * 	ela_implementation(0,0)
+ * 	ela_implementation('a',0,0)
  * 
  */
   __pyx_t_1 = PyCFunction_NewEx(&__pyx_mdef_3ela_1elaimplementationpy, NULL, __pyx_n_s_ela); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 7, __pyx_L1_error)
@@ -1435,7 +1435,7 @@ if (!__Pyx_RefNanny) {
   /* "wrapper.pyx":1
  * cdef extern from "ela.hpp":             # <<<<<<<<<<<<<<
  * 
- * 	void ela_implementation(int compresssion_factor, int multiplier)
+ * 	void ela_implementation(char* filename, int compresssion_factor, int multiplier)
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
