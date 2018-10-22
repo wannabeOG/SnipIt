@@ -116,6 +116,5 @@ int main(int argc, char** argv) {
     }    
     
     imwrite("ela_implemented_img.jpg",elaResult_img);
-    // This is a barebones implementation of the ELA algorithm and gives a good result on different images
-    
+  
 }
